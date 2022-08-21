@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% seo %}
+    <!--  Add Favicon -->
+    <link rel="icon" href="{{'/assets/images/favicon-32x32.png' | relative_url}}" type="image/x-icon" />
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{'/assets/css/app.min.css' | relative_url}}">
+
+    {% feed_meta %}
+
+</head>
+
+<body class="bg-white">
+    <div class="preloader fixed bottom-0 top-0 left-0 right-0 bg-white z-50">
+        <div class="w-16 h-16 absolute bottom-0 top-0 left-0 right-0 m-auto"><img src="assets/images/preloader.gif"
+                alt="title"></div>
+    </div>
+    <!-- modal form -->
+    <div id="search-form" class="zoom-anim-dialog search-modal-form bg-white py-14 mfp-hide">
+        <div class="container">
+            <form class="mb-12">
+                <div class="relative"> <input type="search"
+                        class="block px-6 lg:px-8 py-4 lg:py-6 w-full text-base lg:text-2xl text-gray-400 bg-blue-50 rounded-full border border-blue-100 focus:text-blue-800 focus:border-blue-800 placeholder-gray-600 outline-none duration-300"
+                        placeholder="Search Here" required> <button type="submit"
+                        class="bg-blue-50 absolute right-6 top-px bottom-px duration-300 rounded-full outline-none w-8 h-8 lg:w-8 lg:h-8 m-auto"><svg
+                            class="text-gray-400 hover:text-blue-800 duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg></button> </div>
+            </form>
+        </div>
+    </div>
+    <div class="main-area">
+        {{content}}
+    </div>
+
+    <!--====== Main js ======-->
+    <script src="{{'/assets/js/build.min.js' | relative_url}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+--- 
+layout: default
+---
+{% include header.html %}
+<div class="hero-area relative pt-20 xl:pt-36 mt-16 xl:mt-20">
+   <div class="container mx-auto">
+      <div class="hero-box-3 relative grid gap-6 grid-cols-1 lg:grid-cols-12 items-center text-center lg:text-left">
+         <div class="lg:col-span-6">
+            <div
+               class="hero-content flex flex-wrap content-center relative lg:absolute top-0 bottom-0 left-0 max-w-[860px] z-10">
+               <h4 class="font-serif !leading-normal text-4xl lg:text-6xl text-gray-800 font-medium mb-6">The Complete
+                  App Design Course - UX Thinking</h4>
+               <p class="text-xl text-gray-400 font-normal mb-6">Where had numbered sleeping a in game, century
+                  enormity, his times, or I apartment.</p>
+               <div class="author flex items-center">
+                  <img class="w-10 h-10 rounded-full object-fit" src="assets/images/author/1.webp" alt="author">
+                  <div class="course-content ml-2">
+                     <h6 class="font-serif text-base text-gray-800 hover:text-blue-800 font-medium duration-300">
+                        <a href="author.html">Kristin Watson</a>
+                     </h6>
+                     <p class="text-sm text-gray-400 font-normal">UK, London</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="lg:col-span-6">
+            <div class="feature-image relative" data-aos="fade" data-aos-delay="100">
+               <img class="w-full rounded-xl" src="assets/images/banner-image2.webp" alt="image">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<section class="lesson-area py-20 xl:py-36">
+   <div class="container mx-auto">
+      {% for doc in site.docs %}
+         {% include lesson_box.html %}
+      {% endfor %}
+   </div>
+</section>
+
+{% include footer.html %}

@@ -1,0 +1,24 @@
+- name: Profile
+  slug: profile
+  icon: /assets/images/topics-icon.svg
+
+- name: Invoice
+  slug: invoice
+  icon: /assets/images/topics-icon2.svg
+
+- name: Payment
+  slug: Payment
+  icon: /assets/images/topics-icon3.svg
+
+- name: Installation
+  slug: Installation
+  icon: /assets/images/topics-icon4.svg
+
+- name: Billing
+  slug: Billing
+  icon: /assets/images/topics-icon5.svg
+
+- name: Account Settings
+  slug: account-settings
+  icon: /assets/images/topics-icon6.svg
+

@@ -1,0 +1,50 @@
+####################################################
+#
+# Welcome to Cyver Security Jekyll Template
+#
+# Product Link : https://protecturo.com/product/Cyver Security-responsive-jekyll-news-magazine-theme/
+# Version : v1.0.0
+#
+####################################################
+
+# Site settings
+title: "Cyver Security - Responsive News, Magazine Premium Jekyll Theme"
+email: "info@protecturo.com"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+logo: /assets/images/logo-white.svg
+mobile_logo: /assets/images/icon/phone-white.svg
+description: "Cyver Security is a responsive Jekyll template for your business website"
+top_letest_news: true
+keywords: "jekyll, minimal jekyll, jekyll theme, responsive jekyll, seo friendly blog, super fast blog, responsive"
+mailchimp: "https://protecturo.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=4784863884"
+facebook: https://facebook.com/protecturo
+instagram: https://instagram.com/protecturo
+twitter: https://twitter.com/protecturo_com
+pinterest: https://pinterest.com/protecturo
+linkedin: https://linkedin.com/protecturo
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Post configuration
+permalink: /:categories/:title/
+
+collections:
+  docs:
+    output: true
+    permalink: /doc/:path/
+    sort_by: doc_id
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
+      sort_by: post_id
+
+sass:
+    sass_dir: _sass
+    style: compressed
