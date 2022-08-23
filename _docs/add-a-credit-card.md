@@ -7,7 +7,7 @@ feature_image: /assets/images/doc/1.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK
-tags: [account-settings, payment, billing]
+tags: [account-settings]
 toc: true
 ---
 

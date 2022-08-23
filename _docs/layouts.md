@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Introduction of installation process
-doc_id: 12
+doc_id: 18
 date: 2022-07-07 8:14:30 +0600
 feature_image: /assets/images/doc/12.webp
 author: Themeix

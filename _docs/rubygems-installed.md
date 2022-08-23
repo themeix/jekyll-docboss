@@ -1,15 +1,16 @@
 ---
 layout: doc
-title: Front matter
-doc_id: 15
+title: Ruby Installed
+doc_id: 22
 date: 2022-07-07 8:14:30 +0600
-feature_image: /assets/images/doc/10.webp
+feature_image: /assets/images/doc/5.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK
-tags: [invoice]
+tags: [account-settings]
 toc: true
 ---
+
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
 
 If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:

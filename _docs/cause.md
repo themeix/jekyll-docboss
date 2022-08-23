@@ -7,7 +7,7 @@ feature_image: /assets/images/doc/3.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK
-tags: [account-settings, installation]
+tags: [account-settings]
 toc: true
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

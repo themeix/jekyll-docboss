@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Introduction of payment collection 
-doc_id: 11
+doc_id: 16
 date: 2022-07-07 8:14:30 +0600
 feature_image: /assets/images/doc/11.webp
 author: Themeix

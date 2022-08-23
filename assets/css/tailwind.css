@@ -706,6 +706,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -754,8 +758,8 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -874,6 +878,10 @@ video {
   max-width: 860px;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .flex-none {
   flex: none;
 }
@@ -917,6 +925,10 @@ video {
 
 .flex-row-reverse {
   flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-center {
@@ -1153,6 +1165,10 @@ video {
   padding-right: 2.5rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1235,6 +1251,10 @@ video {
 
 .\!leading-tight {
   line-height: 1.25 !important;
+}
+
+.\!leading-normal {
+  line-height: 1.5 !important;
 }
 
 .text-gray-800 {
@@ -1338,6 +1358,51 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:mt-2::before {
+  content: var(--tw-content);
+  margin-top: 0.5rem;
+}
+
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:h-4::before {
+  content: var(--tw-content);
+  height: 1rem;
+}
+
+.before\:w-10::before {
+  content: var(--tw-content);
+  width: 2.5rem;
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/sidebar-arrow\.svg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('../images/sidebar-arrow.svg');
+}
+
+.before\:bg-no-repeat::before {
+  content: var(--tw-content);
+  background-repeat: no-repeat;
 }
 
 .hover\:-translate-y-1:hover {
@@ -1567,6 +1632,12 @@ video {
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+
+  .lg\:shadow {
+    --tw-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0px 0px 0px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1577,6 +1648,10 @@ video {
 
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .xl\:py-28 {
@@ -1596,5 +1671,9 @@ video {
 
   .xl\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .xl\:pt-36 {
+    padding-top: 9rem;
   }
 }

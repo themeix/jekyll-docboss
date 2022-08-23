@@ -22,6 +22,7 @@
         './assets/css/ghost.card.min.css',  
         './assets/css/ghost.typofix.css',  
         './assets/css/custom.css',
+        './assets/css/prism.css',
     ];
     var JS_Files = [
         './node_modules/jquery/dist/jquery.min.js',
@@ -33,6 +34,7 @@
         './node_modules/chart.js/dist/chart.min.js', 
         './node_modules/prismjs/prism.js', 
         './assets/js/search.js',    
+        './assets/js/prism.js',    
         './assets/js/app.js',    
     ];
     var Production_CSS_Files = [ 

@@ -1,20 +1,20 @@
 ---
 layout: doc
-title: Front matter
-doc_id: 15
+title: Editable sites for jekyll
+doc_id: 11
 date: 2022-07-07 8:14:30 +0600
-feature_image: /assets/images/doc/10.webp
+feature_image: /assets/images/doc/6.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK
-tags: [invoice]
-toc: true
+tags: [profile]
+toc: false
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
 
 If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:
 
-## How to install
+## How to install Doxy
 
 ~~~ bash
 # Install Jekyll and Bundler gems through RubyGems
@@ -32,7 +32,7 @@ If you already have a full Ruby development environment with all headers and Rub
 # Now browse to http://localhost:4000
 ~~~
 
-## Next steps
+## Test Heading
 
 Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.
 
