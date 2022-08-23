@@ -1,0 +1,16 @@
+<ul class="navbar-nav lg:flex items-center">
+    {% for link in site.data.navigation %}
+    <li {% if link.submenu %}class="dropdown"{% endif %}>
+        <a class="text-base text-gray-800 hover:text-blue-800 font-medium {% if link.submenu %}dropdown-toggle{% endif %} inline-block duration-300 px-5 lg:py-8 py-2"
+            href="{{link.url | relative_url}}"> {{link.text}}</a>
+        {% if link.submenu %}
+        <ul class="dropdown-menu bg-white shadow shadow-lg shadow-none py-0 lg:py-4 rounded">
+            {% for subitem in link.submenu %}
+            <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
+                    href="{{subitem.url | relative_url}}"> {{subitem.text}} </a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

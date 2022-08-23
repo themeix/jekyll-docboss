@@ -1,0 +1,52 @@
+---
+layout: default
+pagination:
+  enabled: true
+---
+
+---
+layout: default
+---
+
+{% include header.html %}
+
+{% assign tag = page.title %}
+{% assign docs = site.docs | where: "tags", tag %}
+
+{% for img in site.data.topics %}
+    {{img.icon}}
+    {% if page.title == img.slug %}
+        {% assign tag_img = img.icon %}
+    {% endif %}
+{% endfor %}
+
+<div class="hero-area relative pt-20 xl:pt-28 mt-20">
+    <div class="container mx-auto">
+        <div class="hero-box-3 relative grid gap-6 grid-cols-1 lg:grid-cols-12 items-center text-center lg:text-left">
+            <div class="lg:col-span-7 pr-10">
+                <div
+                    class=" hero-content content-center relative top-0 bottom-0 left-0 max-w-[860px] z-10">
+                    <p class="mb-2 text-base leading-relaxed text-blue-800 font-bold">Total {{docs.size}} docs available
+                    </p>
+                    <h1 class="font-serif !leading-tight text-4xl lg:text-6xl text-gray-800 font-medium mb-6 block">Docs for - {{tag | replace:'-',' ' | capitalize}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="lesson-area py-20">
+
+    <div class="gh-canvas">
+
+        {% for doc in docs %}
+            <a href="{{doc.url | relative_url}}">
+                {% include docbox.html %}
+            </a>
+        {% endfor %}
+
+    </div>
+</section>
+
+
+{% include footer.html %}

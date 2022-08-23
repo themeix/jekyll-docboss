@@ -267,4 +267,12 @@ JS Table of Conttent
     document.getElementById('myChart'),
     config
   );
+
+    // search 
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<div class="search-results"><a class="gh-search-item" href="{url}"><h5 class="search-post-title">{title}</h5></a>'
+    });
 }(jQuery)); 

@@ -1,0 +1,40 @@
+---
+layout: default
+title: Docs
+description: ---
+permalink: /all-docs
+---
+
+{% include header.html %}
+<section class="topics-area py-20 xl:py-28 mt-16" id="popular-topics">
+    <div class="container mx-auto">
+        <div class="section-title text-center max-w-xl mx-auto mb-6 lg:mb-16">
+            <h4 class="font-serif text-3xl lg:text-6xl text-gray-800 font-medium mb-6">Explore Docs</h4>
+            <p class="text-lg text-gray-400 font-normal">For else way a bear way but in her separated if written first
+                step, the a true, the handles change.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for topic in site.data.topics %}
+            {% assign slug = topic.slug %}
+            {% assign docs = site.docs | where: "tags", slug %}
+            {% if docs.size > 0 %}
+            <div class="topic-item tag-business topic-1" data-aos="fade-up " data-aos-delay="0">
+                <div
+                    class="topics-box-1 rounded-lg hover:shadow-lg hover:-translate-y-1 group text-center p-8 duration-300">
+                    <div class="topics-icon flex justify-center h-16 mx-auto mb-6"><img
+                            src="{{topic.icon | relative_url}}" alt="{{topic.name}}"></div>
+                    <div class="topics-content">
+                        <h4 class="font-serif text-2xl text-gray-800 hover:text-blue-800 font-medium mb-2 duration-300">
+                            <a href="{{'/tag/' | relative_url}}{{topic.slug}}">{{topic.name}}</a>
+                        </h4>
+                        <p class="text-base leading-relaxed text-gray-400 font-normal">{{docs.size}} docs</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include footer.html %}

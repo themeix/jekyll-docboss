@@ -32,6 +32,7 @@
         './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js', 
         './node_modules/chart.js/dist/chart.min.js', 
         './node_modules/prismjs/prism.js', 
+        './assets/js/search.js',    
         './assets/js/app.js',    
     ];
     var Production_CSS_Files = [ 

@@ -1,48 +1,12 @@
-<header class="header-area fixed top-0 left-0 right-0 py-2 lg:py-0 z-50 bg-white shadow">
+<header class="header-area fixed top-0 left-0 right-0 py-2 lg:py-0 z-50 bg-white shadow shadow-lg">
   <div class="container mx-auto">
     <div class="flex items-center relative">
-      <div class="header-logo flex-auto lg:flex-none"> <a class="pt-2 pr-8 inline-block" href="index.html">
-          <img src="assets/images/logo.svg" alt="images"> </a> </div>
+      <div class="header-logo flex-auto lg:flex-none"> <a class="pt-2 pr-8 inline-block" href="{{'/' | relative_url}}">
+          <img src="{{'/assets/images/logo.svg' | relative_url}}" alt="{{site.title}}"> </a> </div>
       <div class="mobile-menu bg-white hidden lg:flex flex-1 items-center shadow-xl lg:shadow-none">
-        <ul class="navbar-nav lg:flex items-center">
-          <li class="dropdown"> <a
-              class="text-base text-gray-800 hover:text-blue-800 font-medium dropdown-toggle inline-block duration-300 px-5 lg:py-8 py-2"
-              href="#"> Home <span class="sub-toggle text-3xl">+</span></a>
-            <ul class="dropdown-menu bg-white lg:shadow shadow-none py-0 lg:py-4">
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="index.html"> Home 1 </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="index-2.html"> Home 2 </a></li>
-            </ul>
-          </li>
-          <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 lg:py-8 py-2"
-              href="about.html"> About </a></li>
-          <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 lg:py-8 py-2"
-              href="topics.html"> Topics </a></li>
-          <li class="dropdown"> <a
-              class="text-base text-gray-800 hover:text-blue-800 font-medium dropdown-toggle inline-block duration-300 px-5 lg:py-8 py-2"
-              href="#"> Courses <span class="sub-toggle text-3xl">+</span></a>
-            <ul class="dropdown-menu bg-white lg:shadow shadow-none py-0 lg:py-4">
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="author.html"> Author </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="course.html"> Course </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="courses.html"> Courses </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="course-lesson-1.html"> Lesson 1 </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="course-lesson-2.html"> Lesson 2 </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="course-lesson-3.html"> Lesson 3 </a></li>
-              <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 py-2"
-                  href="course-lesson-4.html"> Lesson 4 </a></li>
-            </ul>
-          </li>
-          <li><a class="text-base text-gray-800 hover:text-blue-800 font-medium block duration-300 px-5 lg:py-8 py-2"
-              href="contact.html"> Contact </a></li>
-        </ul>
+        {% include navigation.html %}
       </div>
+
       <a class="popup-with-form flex lg:hidden items-center p-2" href="#search-form"> <svg class="w-6 h-6 text-gray-800"
           fill="none" stroke="currentcolor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -51,15 +15,19 @@
       <button class="mobile-toggle items-center block lg:hidden" aria-label="Menu Button"> <span
           class="bg-gray-800"></span> <span class="bg-gray-800"></span> <span class="bg-gray-800"></span>
       </button>
-      <div class="hidden lg:flex items-center"> <a
-          class="popup-with-form flex items-center px-6 py-3 text-base text-gray-400 hover:bg-blue-50 rounded-full hover:text-blue-800 group duration-300 ml-4"
+      <div class="hidden lg:flex items-center"> 
+        {% if page.template != 'home' %}
+        <a
+          class="popup-with-form flex items-center px-6 py-3 text-base text-gray-400 bg-blue-50 rounded-full hover:text-blue-800 group duration-300 ml-4"
           href="#search-form"> <span class="mr-2"><svg class="w-5 h-5 text-gray-400 group-hover:text-blue-800"
               fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg></span> Search </a>
-        <a href="#"
-          class="text-base text-white font-medium bg-gradient-to-r to-blue-800 via-blue-200 from-blue-800 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 py-3 px-8 rounded-full ml-4">Subscribe</a>
+          {% endif %}
+
+            <a href="https://support.themeix.com"
+          class="text-base text-white font-medium bg-gradient-to-r to-blue-800 via-blue-200 from-blue-800 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 py-3 px-8 rounded-full ml-4">Get Support</a>
       </div>
     </div>
   </div>

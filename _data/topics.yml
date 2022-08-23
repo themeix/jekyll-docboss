@@ -7,15 +7,15 @@
   icon: /assets/images/topics-icon2.svg
 
 - name: Payment
-  slug: Payment
+  slug: payment
   icon: /assets/images/topics-icon3.svg
 
 - name: Installation
-  slug: Installation
+  slug: installation
   icon: /assets/images/topics-icon4.svg
 
 - name: Billing
-  slug: Billing
+  slug: billing
   icon: /assets/images/topics-icon5.svg
 
 - name: Account Settings

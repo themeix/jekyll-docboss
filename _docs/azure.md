@@ -1,28 +1,14 @@
 ---
 layout: doc
 title: Auzure payment procesisng
-date: 2022-09-08 8:14:30 +0600
+doc_id: 2
+date: 2022-07-07 8:14:30 +0600
 feature_image: /assets/images/doc/2.webp
-tags: [Payment, Invoice, Billing]
+author: Themeix
+author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
+author_location: London,UK
+tags: [payment, invoice, billing]
 toc: true
-custom_links:
-- text: Installation
-  url: /
-- text: Getting Started
-  url: /pages/support
-- text: Product Manual
-  url: /#drop
-  submenu:
-  - text: Invoice
-    url: /blog-post-left-sidebar
-  - text: Payment
-    url: /blog-post-right-sidebar
-  - text: Another Link
-    url: /tag/education
-- text: Support
-  url: https://support.themeix.com	
-- text: Contact
-  url: /pages/contact
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
 

@@ -1,9 +1,13 @@
 ---
 layout: doc
 title: How to add a credit card?
-date: 2022-09-08 8:14:30 +0600
+doc_id: 1
+date: 2022-07-07 8:14:30 +0600
 feature_image: /assets/images/doc/1.webp
-tags: [Account Settings, Payment, Billing]
+author: Themeix
+author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
+author_location: London,UK
+tags: [account-settings, payment, billing]
 toc: true
 ---
 
