@@ -3,7 +3,7 @@ layout: doc
 title: Editable sites for jekyll
 doc_id: 11
 date: 2022-07-07 8:14:30 +0600
-feature_image: /assets/images/doc/6.webp
+feature_image: /assets/images/doc/11.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK

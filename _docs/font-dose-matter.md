@@ -3,7 +3,7 @@ layout: doc
 title: Font dose matter
 doc_id: 14
 date: 2022-07-07 8:14:30 +0600
-feature_image: /assets/images/doc/10.webp
+feature_image: /assets/images/doc/14.webp
 author: Themeix
 author_img: https://www.gravatar.com/avatar/09ac38fd18b276264dcf7f1313e2dcf5?s=250&r=x&d=mp
 author_location: London,UK
